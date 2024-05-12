@@ -1,0 +1,27 @@
+@mixin before_button  {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -2px;
+        left: -2px;
+        height: 100%;
+        width: 100%;
+        transform: scaleX(1.05) scaleY(1.15);
+        border: 2px solid $main-color;
+        border-radius: 67px;
+    }
+}
+
+@mixin button_hover {
+    &:hover {
+        background: $blue;
+        color: #fff;
+        transition: .6s all ease;
+        &:before {
+            transition: .6s all ease;
+            border-color: $blue;
+            transform: scale(1);
+        }
+    }
+}
