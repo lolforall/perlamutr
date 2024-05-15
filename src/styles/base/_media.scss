@@ -1,0 +1,223 @@
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+    .promo {
+        &__address {
+            padding-left: 585px;
+        }
+        &__workinghours {
+            padding-left: 585px;
+            padding-right: 150px;
+        }
+        &__title {
+            width: 700px;
+            margin-left: 90px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .menu {
+        padding: 0 100px;
+    }
+    .promo {
+        min-height: 600px;
+        padding-bottom: 30px;
+        &__address {
+            margin-top: 70px;
+            padding-right: 100px;
+            padding-left: 222px;
+        }
+        &__workinghours {
+            padding-left: 474px;
+            padding-right: 100px;
+        }
+        &__title {
+            width: 600px;
+            margin: 100px 0 0 30px;
+        }
+        &__button {
+            margin-top: 50px;
+            width: 280px;
+            height: 50px;
+            font-size: 24px;
+            padding: 13px 0;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .menu {
+        padding: 0;
+    }
+    .promo {
+        &__address {
+            margin-top: 50px;
+            padding-left: 82px;
+            padding-right: 0;
+        }
+        &__workinghours {
+            padding-left: 334px;
+            padding-right: 0;
+        }
+        &__title {
+            width: 600px;
+            margin: 100px 0 0 30px;
+        }
+        &__button {
+            margin-top: 50px;
+            width: 280px;
+            height: 50px;
+            font-size: 24px;
+            padding: 13px 0;
+        }
+    }
+}
+
+
+@media (hover: none) and (pointer: coarse) { 
+	*:hover { 
+		background-color: inherit; 
+	} 
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .xs-visible {
+        display: block;
+    }
+    .promo {
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        padding-top: 20px;
+        min-height: 350px;
+        &__wrapper {
+            order: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+        }
+        &__address, &__workinghours {
+            width: 50%;
+            padding: 5px;
+            margin: 0;
+        }
+        &__title {
+            order: 2;
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 50vw;
+        }
+        &__subtitle {
+            order: 3;
+            margin: 10px auto 0 auto;
+            width: 100px;
+            img {
+                width: 100%;
+            }
+        }
+        &__button {
+            order: 5;
+            width: 250px;
+            padding: 11px 0;
+        }
+    }
+    .menu {
+        order: 4;
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+        height: 0;
+        align-self: center;
+        opacity: 0;
+        overflow: hidden;
+        transition: 350ms;
+        &_active {
+            transition: 350ms;
+            height: 35vh;
+            opacity: 1;
+        }
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        padding: 5px;
+        width: 36px;
+        height: 36px;
+        top: 75px;
+        right: 30px;
+        border: 2px solid #fff;
+        border-radius: 2px;
+        span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border: 1px solid #fff;
+            transition: .6s all ease;
+            &:nth-child(2) {
+                margin-top: 8px;
+            }
+            &:nth-child(3) {
+                margin-top: 8px;
+            }
+        }
+        &_active {
+            span {
+                &:nth-child(1) {
+                    transform: translateY(10px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .promo {
+        max-height: 100vh;
+        &__wrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        &__address, &__workinghours {
+            width: 100%;
+            font-size: 14px;
+            padding: 0;
+        }
+        &__button {
+            width: 200px;
+            padding: 14px 0;
+            font-size: 20px;
+        }
+    }
+    .hamburger {
+        top: 52px;
+        right: 20px;
+    }
+}

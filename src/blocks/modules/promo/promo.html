@@ -1,5 +1,11 @@
 <section class="promo">
     <div class="container">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <nav class="menu">
             <a href="#" class="menu__link">Услуги<span></span></a>
             <a href="#" class="menu__link">О нас<span></span></a>
@@ -8,11 +14,18 @@
             <a href="#" class="menu__link">Отзывы<span></span></a>
             <a href="#" class="menu__link">Контакты<span></span></a>
         </nav>
-        <address class="promo__address">г. Новосибирск, ул. Красный проспект, 220 корп. 10, 2 этаж, офис 207</address>
-        <div class="promo__workinghours">Время работы: ежедневно с 9:00 до 21:00</div>
-        <h1 class="title promo__title">
-            <img src="../img/logo/text_logo_big.png" alt="Perlamutr" class="promo__title-img">
+        <div class="promo__wrapper">
+            <address class="promo__address">г. Новосибирск, ул. Красный проспект, 220 корп. 10, 2 этаж, офис 207</address>
+            <div class="promo__workinghours">Время работы: ежедневно с 9:00 до 21:00</div>
+        </div>
+        <h1 class="promo__title">
+            <picture>
+                <source media="(max-width: 767px)" srcset="img/logo/text_logo.png">
+                <source media="(min-width: 768px)" srcset="img/logo/text_logo_big.png">
+                <img src="img/logo/text_logo_big.png" alt="Perlamutr" class="promo__title-img">
+            </picture>
         </h1>
+        <div class="promo__subtitle xs-visible"><img src="img/logo/logo_tooth.png" alt="logo"></div>
         <a href="tel:+79130071268" class="button button_main promo__button">Позвонить нам</a>
     </div>
 </section>
