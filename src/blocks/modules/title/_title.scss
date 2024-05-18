@@ -1,0 +1,11 @@
+.title {
+    font-family: 'Lora', serif;
+    color: #282828;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 220px 0;
+    z-index: 2;
+    @include before_title;
+}

@@ -25,3 +25,19 @@
         }
     }
 }
+
+@mixin before_title {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 667px;
+        height: 269px;
+        border-radius: 100%;
+        background: $main-color;
+        top: 110px;
+        left: 330px;
+        transform: rotate(21deg);
+        filter: blur(35px);
+    }
+}

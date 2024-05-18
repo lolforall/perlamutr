@@ -1,8 +1,9 @@
 .button {
     position: relative;
+    display: block;
     z-index: 2;
-    width: 373px;
-    height: 78px;
+    width: 380px;
+    height: 96px;
     background: $main-color;
     border-radius: 60px;
     color: #282828;
@@ -10,9 +11,12 @@
     font-weight: 400;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
     @include before_button;
     @include button_hover;
     &_main {
+        width: 373px;
+        height: 78px;
         background: #fff;
         color: $promo;
         &::before {

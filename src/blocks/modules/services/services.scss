@@ -1,0 +1,32 @@
+.services {
+    min-height: 1200px;
+    padding-bottom: 160px;
+    &__wrapper {
+        padding: 0 80px;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(190px, auto));
+        grid-template-rows: repeat(2, minmax(240px, auto));
+        grid-auto-rows: minmax(240px, auto);
+        gap: 80px 40px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        &-img {
+            width: 100%;
+        }
+        &-subtitle {
+            color: #282828;
+            font-size: 24px;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    &__button {
+        margin: 70px auto 0 auto;
+    }
+}
