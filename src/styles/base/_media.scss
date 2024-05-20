@@ -2,6 +2,14 @@
     .container {
         max-width: 1140px;
     }
+    .title {
+        padding: 180px 0;
+        &:before {
+            width: 467px;
+            height: 209px;
+            left: 340px;
+        }
+    }
     .promo {
         &__address {
             padding-left: 585px;
@@ -15,6 +23,11 @@
             margin-left: 90px;
         }
     }
+    .services {
+        &__wrapper {
+            padding: 0 15px;
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -23,6 +36,20 @@
     }
     .menu {
         padding: 0 100px;
+    }
+    .button {
+        width: 300px;
+        height: 80px;
+        font-size: 24px;
+    }
+    .title {
+        padding: 100px 0;
+        &:before {
+            width: 300px;
+            height: 150px;
+            left: 330px;
+            top: 50px;
+        }
     }
     .promo {
         min-height: 600px;
@@ -43,9 +70,25 @@
         &__button {
             margin-top: 50px;
             width: 280px;
-            height: 50px;
+            height: 70px;
             font-size: 24px;
-            padding: 11px 0;
+            padding: 22px 0;
+        }
+    }
+    .services {
+        min-height: 900px;
+        &__wrapper {
+            padding: 0 10px;
+            grid-template-columns: repeat(5, minmax(150px, auto));
+            grid-template-rows: repeat(2, minmax(220px, auto));
+            grid-auto-rows: minmax(220px, auto);
+            gap: 40px;
+        }
+        &__item {
+            gap: 15px;
+            &-subtitle {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -56,6 +99,21 @@
     }
     .menu {
         padding: 0;
+    }
+    .button {
+        width: 270px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .title {
+        padding: 80px 0;
+        font-size: 36px;
+        &:before {
+            width: 250px;
+            height: 115px;
+            left: 230px;
+            top: 42px;
+        }
     }
     .promo {
         &__address {
@@ -74,9 +132,28 @@
         &__button {
             margin-top: 50px;
             width: 280px;
-            height: 50px;
+            height: 60px;
             font-size: 24px;
-            padding: 11px 0;
+            padding: 16px 0;
+        }
+    }
+    .services {
+        padding-bottom: 80px;
+        &__wrapper {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, minmax(200px, auto));
+            grid-auto-rows: minmax(200px, auto);
+            gap: 20px;
+        }
+        &__item {
+            gap: 10px;
+            padding: 5px;
+            &-subtitle {
+                font-size: 16px;
+            }
+        }
+        &__button {
+            margin-top: 50px;
         }
     }
 }
@@ -95,6 +172,15 @@
     }
     .xs-visible {
         display: block;
+    }
+    .button {
+        width: 230px;
+        height: 50px;
+    }
+    .title {
+        &:before {
+            left: 145px;
+        }
     }
     .promo {
         .container {
@@ -132,8 +218,10 @@
         }
         &__button {
             order: 5;
-            width: 250px;
-            padding: 11px 0;
+            width: 230px;
+            height: 50px;
+            font-size: 20px;
+            padding: 14px 0;
         }
     }
     .menu {
@@ -191,12 +279,38 @@
             }
         }
     }
+    .services {
+        padding-bottom: 50px;
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, minmax(200px, auto));
+            grid-auto-rows: minmax(200px, auto);
+            gap: 20px;
+        }
+        &__button {
+            margin-top: 30px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
     .container {
         max-width: 100%;
         padding: 0 15px;
+    }
+    .title {
+        font-size: 30px;
+        padding: 60px 0;
+        &:before {
+            width: 170px;
+            height: 100px;
+            left: 75px;
+            top: 27px;
+        }
+    }
+    .button {
+        width: 200px;
+        font-size: 16px;
     }
     .promo {
         max-height: 100vh;
@@ -219,5 +333,20 @@
     .hamburger {
         top: 52px;
         right: 20px;
+    }
+    .services {
+        min-height: 1200px;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, minmax(150px, auto));
+            grid-auto-rows: minmax(150px, auto);
+        }
+        &__item {
+            gap: 5px;
+            &-subtitle {
+                font-size: 14px;
+            }
+        }
     }
 }
