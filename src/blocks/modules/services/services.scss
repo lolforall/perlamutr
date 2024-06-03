@@ -9,6 +9,9 @@
         grid-auto-rows: minmax(240px, auto);
         gap: 80px 40px;
     }
+    &__link {
+        text-decoration: none;
+    }
     &__item {
         display: flex;
         flex-direction: column;
